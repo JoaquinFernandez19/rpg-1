@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://dl3qm57bkmuxc"]
+[gd_scene load_steps=4 format=3 uid="uid://dl3qm57bkmuxc"]
+
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_6sgcd"]
+[ext_resource type="PackedScene" uid="uid://be0ckjp75ot2m" path="res://Scenes/Terrain.tscn" id="2_8vtuj"]
+[ext_resource type="PackedScene" uid="uid://tthnvnvjrn44" path="res://Scenes/Character.tscn" id="3_v670l"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_6sgcd")
+
+[node name="Terrain" parent="." instance=ExtResource("2_8vtuj")]
+
+[node name="Character" parent="." instance=ExtResource("3_v670l")]
